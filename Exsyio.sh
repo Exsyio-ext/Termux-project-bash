@@ -51,6 +51,6 @@ echo " + SUBDOMAIN "
 echo "------------- "
 echo "-------------------------------------------------------------- "
 echo ""
-         curl -s  https://certspotter.com/api/v0/certs\?domain\=$i | jq '.[].dns_names[]' | tr -d '"' | sed 's/www.//g' | sort -u
+         curl -s  https://certspotter.com/api/v0/certs\?domain\=$i | jq '.[].dns_names[]' | tr -d '"'
 echo ""
 echo "-------------------------------------------------------------- " ; done
